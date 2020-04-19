@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20190731135318_Initialize.cs" />
+    <Compile Remove="Migrations\20190807122038_NewEntities.cs" />
+    <Compile Remove="Migrations\20190813143822_AdicionaIdLinhasPedido.cs" />
+    <Compile Remove="Migrations\20190814135854_AddLinhasDoPedidoId.cs" />
+    <Compile Remove="Migrations\20190814143206_AddLinhasDoPedidoId.cs" />
+    <Compile Remove="Migrations\20190814144131_NewEntities.cs" />
+    <Compile Remove="Migrations\20190814144611_NewEntities.cs" />
+    <Compile Remove="Migrations\20190814144833_NewEntities.cs" />
+    <Compile Remove="Migrations\20190814145204_NewEntities.cs" />
+    <Compile Remove="Migrations\20190822171440_AjustaFK.cs" />
+    <Compile Remove="Migrations\20190822171640_NewEntities.cs" />
+    <Compile Remove="Migrations\20190822174151_NewEntities.cs" />
+    <Compile Remove="Migrations\20190822175523_NewEntities.cs" />
+    <Compile Remove="Migrations\20190823115002_NewEntities.cs" />
+    <Compile Remove="Migrations\20190823115558_NewEntities.cs" />
+    <Compile Remove="Migrations\20190823115826_NewEntities.cs" />
+    <Compile Remove="Migrations\20190823122336_NewEntities.cs" />
+    <Compile Remove="Migrations\20190823123733_NewEntities.cs" />
+    <Compile Remove="Migrations\20190823130016_NewEntities.cs" />
+    <Compile Remove="Migrations\20190823131439_NewEntities.cs" />
+    <Compile Remove="Migrations\20190823173140_NewEntities.cs" />
+    <Compile Remove="Migrations\20190829114419_NewEntities.cs" />
+    <Compile Remove="Migrations\20190829114910_Initialize.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Empresa.Domain\Empresa.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
